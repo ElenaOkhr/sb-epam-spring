@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+  xmlns:context = "http://www.springframework.org/schema/context"
+  xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <context:annotation-config/>
+
+  <bean class="domain.Rider"/>
+  <bean class="domain.Horse"/>
+  <bean class="domain.Breed"/>
+  <bean class="domain.Race"/>
+
+  <!--<bean id="breed1" class="domain.Breed">
+    <property name="name" value="backend"/>
+  </bean>
+  <bean id="breed2"  class="domain.Breed">
+    <property name="name" value="frontend"/>
+  </bean>
+  <bean id="breed3"  class="domain.Breed">
+    <property name="name" value="fullstack"/>
+  </bean>
+
+  <bean id="horse1" class="domain.Horse">
+    <property name="name" value="Danya"/>
+    <property name="breed" ref="breed1"/>
+  </bean>
+  <bean id="horse2" class="domain.Horse" depends-on="breed2">
+    <property name="name" value="Matvey-1"/>
+    <property name="breed" ref="breed2"/>
+  </bean>
+  <bean id="horse3" class="domain.Horse" depends-on="breed3">
+    <property name="name" value="Matvey-2"/>
+    <property name="breed" ref="breed3"/>
+  </bean>
+  <bean id="horse4" class="domain.Horse" depends-on="breed1">
+    <property name="name" value="Vera"/>
+    <property name="breed" ref="breed1"/>
+  </bean>
+
+  <bean id="rider1" class="domain.Rider">
+    <property name="name" value="Mikha"/>
+  </bean>
+  <bean id="rider2" class="domain.Rider">
+    <property name="name" value="Sergey l."/>
+  </bean>
+  <bean id="rider3" class="domain.Rider">
+    <property name="name" value="Sasha"/>
+  </bean>
+  <bean id="rider4" class="domain.Rider">
+    <property name="name" value="Andrey D."/>
+  </bean>
+
+  <bean id="race" class="domain.Race"/>
+-->
+</beans>
